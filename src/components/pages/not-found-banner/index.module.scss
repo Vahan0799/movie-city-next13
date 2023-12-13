@@ -1,0 +1,26 @@
+.notFound {
+    &Wrapper {
+        @apply h-[100vh] w-full bg-no-repeat bg-cover;
+
+        & > a {
+            @apply w-full h-full absolute inset-0;
+        }
+    }
+
+    &Container {
+        @apply text-center absolute z-[1] top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4;
+
+        h1 {
+            @apply text-[150px] lg:text-[250px] font-bold leading-[normal];
+            @apply before:opacity-100 #{!important};
+        }
+
+        h2 {
+            @apply text-lg;
+        }
+
+        a {
+            @apply max-w-[200px] mx-auto mt-5;
+        }
+    }
+}

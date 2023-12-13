@@ -1,0 +1,55 @@
+{
+  "global": {
+    "search": "Поиск",
+    "genre": "Жанр",
+    "genres_movies": "Филмьмы",
+    "more": "Показать больше",
+    "less": "Скрыть"
+  },
+  "pageMetas": {
+    "castTitle": "Актеры и съемочная группа",
+    "homeDescription": "Присоединяйтесь к нам и зовите друзей, чтобы вместе с MovieCity смотреть фильмы онлайн бесплатно в HD!"
+  },
+  "media": {
+    "trailer": "Смотреть трейлер",
+    "title": "Название",
+    "originalTitle": "Оригинальное название",
+    "year": "Дата выхода",
+    "tagline": "Слоган",
+    "budget": "Бюджет",
+    "duration": "Продолжительность",
+    "min": "мин",
+    "country": "Страна",
+    "rating": "Рейтинг фильма",
+    "totalVotes": "Общие отзывы",
+    "about": "Описание",
+    "similarMovies": "Похожие фильмы",
+    "recommendedMovies": "Рекомендуемые",
+    "popularity": "Популярность",
+    "reviews": "Отзывы",
+    "missingReview": "У нас нет отзывов для",
+    "missingRecommendations": "У нас нет рекомендации для",
+    "missingSimilars": "У нас нет похожих на",
+    "missingCast": "У нас нет список актерев на",
+    "viewMore": "Подробно",
+    "back": "Вернуться на главную",
+    "number_of_episodes": "Kоличество серий",
+    "number_of_seasons": "Kоличество сезонов",
+    "first_air_date": "Первая серия",
+    "last_air_date": "Последняя серия",
+    "created_by": "Создатели",
+    "episode_run_time": "Episode runtime"
+  },
+  "cast": {
+    "cast": "Актеры",
+    "crew": "Съемочная группа"
+  },
+  "today": "Сегодня",
+  "week": "На этой неделе",
+  "trendingMovies": "Трендовые Фильмы",
+  "topMovies":  "Топовые фильмы",
+  "toCinema": "В Кинотеатрах",
+  "searchResults": "Результаты поиска",
+  "noResults": "По вашему запросу нечего не найдено.",
+  "loader": "Идет загрузка"
+}

@@ -1,0 +1,11 @@
+.sliderList {
+    &Slider {
+        @apply relative;
+    }
+
+    &Empty {
+        @apply text-[13px] p-5 rounded-[6px] mx-5 lg:mx-3
+        bg-secondary-gray lg:px-3 italic text-black-white
+        font-normal;
+    }
+}

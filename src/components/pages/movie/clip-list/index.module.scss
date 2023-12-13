@@ -1,0 +1,23 @@
+.clip {
+    &List {
+        @apply relative;
+
+        &Item {
+            @apply p-2 w-full;
+
+            & > div {
+                @apply rounded-[6px] overflow-hidden
+                max-w-[unset] max-h-[38vw] lg:max-h-[150px];
+
+                img {
+                    @apply object-contain w-full;
+                }
+            }
+        }
+    }
+
+    &Play {
+        @apply absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4
+        w-[65px] h-[65px] pointer-events-none;
+    }
+}

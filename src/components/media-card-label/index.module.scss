@@ -1,0 +1,31 @@
+.mediaCard {
+    &Label {
+        @apply flex;
+
+        &Container {
+            @apply
+            [&:first-child]:mt-12
+            [&:not(:last-child)]:mb-5;
+        }
+    }
+
+    &Image {
+        @apply w-[35%] lg:w-1/4;
+    }
+
+    &Details {
+        @apply w-[65%] lg:w-3/4 p-2 relative;
+
+        h4 {
+            @apply font-bold mb-2 max-md:text-[14px];
+        }
+
+        p {
+            @apply text-sm;
+        }
+
+        span {
+            @apply ml-auto;
+        }
+    }
+}

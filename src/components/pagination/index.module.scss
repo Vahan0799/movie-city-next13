@@ -1,0 +1,25 @@
+.pagination {
+    &Wrapper {
+        @apply relative my-5;
+    }
+
+    &Container {
+        @apply flex items-center justify-center gap-3;
+    }
+
+    &Item {
+        @apply text-[16px] leading-[unset];
+
+        svg {
+            @apply fill-white;
+        }
+
+        &Active {
+            @apply bg-primary-pink pointer-events-none;
+        }
+
+        &Rewind {
+            @apply absolute left-[12px];
+        }
+    }
+}

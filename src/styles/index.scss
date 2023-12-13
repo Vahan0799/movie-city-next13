@@ -1,0 +1,131 @@
+@forward './global/fonts';
+@forward './global/reset';
+@forward './global/utilities';
+@forward 'node_modules/nprogress/nprogress.css';
+@import 'node_modules/swiper/swiper';
+@import 'node_modules/swiper/modules/pagination';
+@import 'node_modules/swiper/modules/navigation';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary-blue: 88, 181, 230;
+        --color-primary-pink: 250, 78, 147;
+        --color-primary-gray: 231, 231, 231;
+        --color-pink-primary: 216, 36, 124;
+        --color-black: 0, 0, 0;
+        --color-white: 255, 255, 255;
+
+        --color-secondary-blue: 68, 141, 180;
+        --color-secondary-gray: 219, 219, 219;
+        --color-secondary-pink: 99, 81, 171;
+
+        --popular-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19),
+        0 6px 6px 0 rgba(0, 0, 0, 0.23);
+        --inner-shadow: -2px -2px 92px -3px rgba(0, 0, 0, 0.23) inset;
+        --header-bg: rgba(68, 64, 64, 0.89);
+        --nav-bg: 245, 245, 245;
+        --header-shadow: inset 4px -13px 50px -20px rgba(0, 0, 0, 0.66);
+        --navigation-background: 0, 0, 0;
+        --card-label-shadow: 0 14px 28px rgba(0, 0, 0, 0.2509803922),
+        0 10px 10px rgba(0, 0, 0, 0.2196078431);
+
+        --linear-gradient-main: linear-gradient(to right, rgb(250, 78, 147) 0, rgb(88, 181, 230) 100%);
+        --transparencyBackground: rgba(var(--color-white), 0.3);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: url('../assets/images/icons/mac-cursor.svg'), auto;
+
+    &.dark {
+        &:root {
+            --color-primary-blue: 250, 78, 147;
+            --color-primary-pink: 88, 181, 230;
+            --color-primary-gray: 32, 32, 32;
+            --color-black: 255, 255, 255;
+            --color-white: 0, 0, 0;
+
+            --color-secondary-blue: 158, 45, 90;
+            --color-secondary-gray: 58, 58, 58;
+
+            --popular-shadow: 0 10px 20px 0 rgba(153, 153, 153, 0.19),
+            0 6px 6px 0 rgba(41, 41, 41, 0.23);
+            --inner-shadow: -2px -2px 92px -3px rgba(153, 153, 153, 0.19) inset;
+            --header-bg: rgba(46, 48, 51, 0.7);
+            --nav-bg: 46, 48, 51;
+            --navigation-background: 249, 250, 251;
+            --card-label-shadow: 0 14px 28px rgba(255, 255, 255, 0.2509803922),
+            0 10px 10px rgba(255, 255, 255, 0.2196078431);
+
+            --linear-gradient-main: linear-gradient(to right,rgb(88, 181, 230) 0, rgb(250, 78, 147) 100%);
+            --transparencyBackground: rgba(var(--color-white), 0.5);
+        }
+
+        .theme-switcher > span {
+            @apply translate-x-[33px];
+            box-shadow: inset -5px -5px 4px rgba(53, 53, 53, 0.3);
+        }
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(var(--foreground-rgb));
+    @apply bg-primary-gray;
+}
+
+::selection {
+    @apply bg-primary-pink;
+}
+
+.page {
+    @apply pt-[80px] lg:pt-[94px] relative z-[2] bg-primary-gray;
+
+    &-container {
+        @apply min-h-[100vh]
+        max-lg:px-[15px]
+        lg:max-xl:max-w-[94%]
+        lg:mx-auto lg:w-full
+        xl:max-w-[1370px] xl:px-7;
+    }
+}
+
+.main-container {
+    @apply mx-auto lg:max-w-[92%] min-[1400px]:max-w-[1320px];
+}
+
+a,
+label,
+button,
+[class*="button"] {
+    cursor: url('../assets/images/icons/mac-pointer.svg'), auto;
+}
+
+h3 {
+    @apply text-xl mb-3 text-primary-blue font-bold;
+}
+
+figure {
+    .fallback-img {
+        @apply lg:w-full lg:h-full;
+
+        img {
+            @apply object-contain;
+        }
+    }
+
+    .full-sized & {
+        & > div {
+            @apply h-auto;
+        }
+
+        .fallback-img {
+            @apply max-w-[unset] max-h-[unset];
+        }
+    }
+}
